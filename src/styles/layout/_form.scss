@@ -1,0 +1,111 @@
+.form {
+	margin: 40px auto;
+	max-width: 600px;
+}
+
+.label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: $extra-bold;
+	color: $white;
+}
+
+.label-checkbox {
+	position: relative;
+	padding-left: 22px;
+	font-weight: $semi-bold;
+	color: rgba($white, 0.7);
+}
+
+.input-checkbox {
+	appearance: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	&::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 2px;
+		width: 12px;
+		height: 12px;
+		background: transparent;
+		border: 1px solid $tertiary-color;
+	}
+	&::before {
+		content: '';
+		position: absolute;
+		left: 5px;
+		top: 3px;
+		width: 3px;
+		height: 7px;
+		border: solid $white;
+		border-width: 0 2px 2px 0;
+		transform: rotate(45deg);
+		display: none;
+	}
+	&:checked {
+		&:before {
+			display: block;
+		}
+	}
+}
+
+.input {
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 5px 10px;
+	font-size: 16px;
+	line-height: 16px;
+	background: transparent;
+	border: 1px solid $grey-dark;
+	border-radius: $border-radius;
+	font-family: $font-default;
+	color: $white;
+	&:focus-visible {
+		outline-color: $secondary-color;
+	}
+	&::placeholder {
+		color: $white;
+	}
+}
+
+.select {
+	appearance: none;
+	background-image: url('chevron-down.svg');
+	background-repeat: no-repeat;
+	background-position: right 10px center;
+	cursor: pointer;
+	padding-right: 30px;
+}
+
+.option {
+	background-color: $secondary-color;
+}
+
+.fieldset {
+	margin-bottom: 10px;
+}
+
+.submit {
+	width: 100%;
+	padding: 10px 14px;
+	border: none;
+	cursor: pointer;
+	margin-top: 10px;
+	background-color: $secondary-color;
+	border-radius: $border-radius;
+	color: $white;
+	font-family: $font-default;
+	transition: $transition;
+	&:hover {
+		background-color: $primary-color;
+	}
+}
+
+.wrap-checkbox {
+	margin-bottom: 5px;
+}

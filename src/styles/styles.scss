@@ -1,7 +1,16 @@
 @import './base/variables';
 @import './base/reset';
+@import './base/typography';
 
-@import './components/wrapper';
 @import './components/header';
 @import './components/logo';
 @import './components/navbar';
+@import './components/blog-list';
+@import './components/blog';
+@import './components/loader';
+@import './components/article';
+@import './components/new-blog';
+
+@import './layout/wrapper';
+@import './layout/buttons';
+@import './layout/form';

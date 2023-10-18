@@ -1,7 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&family=Gloock&display=swap');
 
-$font-deafult: 'Gabarito', sans-serif;
+$font-default: 'Gabarito', sans-serif;
 
-$platinum: #f3efef;
-$primary-color: #7b445a;
-$secondary-color: #571d34;
+$body-color: #0e1019;
+
+$dark: #191b26;
+$white: #f3efef;
+$grey-light: #dedad6;
+$grey: #96979b;
+$grey-dark: #5e6068;
+
+$primary-color: #00C49A;
+$secondary-color: #985F99;
+$tertiary-color: #9684A1;
+
+$border-color: #e0ddde;
+
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+$extra-bold: 800;
+$black-bold: 900;
+
+$border-radius: 8px;
+
+$transition: 250ms ease-in-out;
