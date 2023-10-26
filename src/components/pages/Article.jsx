@@ -27,9 +27,6 @@ function Article() {
 					{ article &&
 						<article className="article">
 							<h1 className="h1 article__title">{ article.title }</h1>
-							<div className='article__categories'>
-								{article.categories.map((category, index) => <span className='tag' key={index}>{category}</span>)}
-							</div>
 							<p className='article__author'>Written by { article.author }</p>
 							<p className="text article__text">{ article.body }</p>
 							<Link className='link' to="/">go to homepage</Link>

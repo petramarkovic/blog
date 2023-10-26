@@ -10,9 +10,6 @@ function BlogList({ blogs, title }) {
 				<h3 className='blog__title'>{blog.title}</h3>
 				<p className='blog__author'>Written by {blog.author}</p>
 				<p className="blog__body">{blog.summary}</p>
-				{/* <div className='blog__categories'>
-					{blog.categories.map((category, index) => <span key={index} className='tag'>{category}</span>)}
-				</div> */}
 			</Link>)}
 		</div>
 	</>
