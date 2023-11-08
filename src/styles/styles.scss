@@ -1,6 +1,8 @@
 @import './base/variables';
 @import './base/reset';
+@import './base/mixins';
 @import './base/typography';
+@import './base/helpers';
 
 @import './components/header';
 @import './components/logo';
@@ -10,6 +12,7 @@
 @import './components/loader';
 @import './components/article';
 @import './components/new-blog';
+@import './components/search';
 
 @import './layout/wrapper';
 @import './layout/buttons';

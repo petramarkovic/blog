@@ -6,6 +6,7 @@
 	list-style: none;
 	margin-left: 20px;
 	display: inline-block;
+	vertical-align: middle;
 }
 
 .nav__link {
@@ -17,7 +18,7 @@
 	color: $secondary-color;
 	font-family: $font-default;
 	transition: $transition;
-	&:hover {
+	@include hover {
 		color: $white;
 	}
 }

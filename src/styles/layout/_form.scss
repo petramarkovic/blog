@@ -73,6 +73,11 @@
 	}
 }
 
+.input--search {
+	display: inline-block;
+	margin-bottom: 0;
+}
+
 .select {
 	appearance: none;
 	background-image: url('chevron-down.svg');
@@ -97,11 +102,34 @@
 	color: $white;
 	font-family: $font-default;
 	transition: $transition;
-	&:hover {
+	@include hover {
 		background-color: $primary-color;
 	}
 }
 
+.submit--search {
+	display: inline-block;
+	flex: 1;
+	margin: 0 0 0 5px;
+}
+
 .wrap-checkbox {
 	margin-bottom: 5px;
+}
+
+.search-form {
+	max-width: 600px;
+	margin: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	transform: translate(-50%, -50%);
+	padding: 30px;
+	background-color: $dark;
+	border-radius: $border-radius;
+}
+
+.search-form__wrap {
+	display: flex;
 }
